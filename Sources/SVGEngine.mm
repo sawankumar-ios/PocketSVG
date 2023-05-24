@@ -908,7 +908,7 @@ hexTriplet::hexTriplet(NSString *str)
         str = mapped;
     }
         
-    if ([str isEqualToString:@"white"])
+    if ([str isEqualToString:@"white"]) {
         str = @"#ffffff";
     }
     
