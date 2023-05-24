@@ -907,10 +907,6 @@ hexTriplet::hexTriplet(NSString *str)
     if (mapped) {
         str = mapped;
     }
-    NSString *strTemp = @"white";
-    if ([str isEqualToString: strTemp]) {
-        str = @"#ffffff";
-    }
     
     if ([str hasPrefix:@"rgb("]) {
 		NSCParameterAssert([str hasSuffix:@")"]);
