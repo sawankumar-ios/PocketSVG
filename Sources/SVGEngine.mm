@@ -909,7 +909,7 @@ hexTriplet::hexTriplet(NSString *str)
     }
         
     if ([str isEqualToString:@"white"])
-        str = @"#ffffff"
+        str = @"#ffffff";
     }
     
     if ([str hasPrefix:@"rgb("]) {
