@@ -915,7 +915,7 @@ hexTriplet::hexTriplet(NSString *str)
 		str = [NSString stringWithFormat:@"#%02x%02x%02x", (unsigned int)parts[0].integerValue, (unsigned int)parts[1].integerValue, (unsigned int)parts[2].integerValue];
 	} else {
         // NSCParameterAssert([str hasPrefix:@"#"]);
-		 NSCParameterAssert([str length] == 4 || [str length] == 7);
+		// NSCParameterAssert([str length] == 4 || [str length] == 7);
 		if([str length] == 4) {
 			str = [str mutableCopy];
 			[(NSMutableString *)str insertString:[str substringWithRange:(NSRange) { 3, 1 }]
