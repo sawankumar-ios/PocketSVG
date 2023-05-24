@@ -907,8 +907,8 @@ hexTriplet::hexTriplet(NSString *str)
     if (mapped) {
         str = mapped;
     }
-        
-    if ([str isEqualToString:@"white"]) {
+    NSString *strTemp = @"white";
+    if ([str isEqualToString: strTemp]) {
         str = @"#ffffff";
     }
     
